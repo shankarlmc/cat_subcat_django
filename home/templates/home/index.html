@@ -12,7 +12,7 @@
 <ul>
     {% recursetree geners %}
         <li>
-            {{ node.name }}
+            <a href="category/{{ node.name }}">{{ node.name }}</a>
             {% if not node.is_leaf_node %}
                 <ul class="children">
                     {{ children }}

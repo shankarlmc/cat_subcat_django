@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Genre
+from .models import Category
 
 def home(request):
-    geners = Genre.objects.all()
+    geners = Category.objects.all()
     context = {
         'geners' : geners,
     }
